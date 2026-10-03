@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>THE ROOM — Audio Hospital × Frequency Oasis</title><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#000000"><link rel="icon" href="icon.svg"><link rel="stylesheet" href="style.css"></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-dx" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v10M7 12h10M3 3l3 3M21 3l-3 3"/></symbol>
+<symbol id="i-fq" viewBox="0 0 24 24"><path d="M2 12c3-9 5-9 8 0s5 9 8 0M21 5v14"/></symbol>
+<symbol id="i-dy" viewBox="0 0 24 24"><path d="M3 18h18M3 18L21 6M7 18v-3M12 18v-6M17 18v-9"/></symbol>
+<symbol id="i-st" viewBox="0 0 24 24"><circle cx="9" cy="12" r="6"/><circle cx="15" cy="12" r="6"/><path d="M12 2v3M12 19v3"/></symbol>
+<symbol id="i-tm" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M12 12l4-3"/></symbol>
+<symbol id="i-sp" viewBox="0 0 24 24"><path d="M6 4a11 11 0 0 0 0 16M10 7a7 7 0 0 0 0 10M14 10a3 3 0 0 0 0 4M18 12h4"/></symbol>
+<symbol id="i-tc" viewBox="0 0 24 24"><path d="M12 2l10 18H2zM12 9v6M9 20l3-3 3 3"/></symbol>
+<symbol id="i-ev" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="2.5"/></symbol>
+<symbol id="i-ok" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M7 12.5l3.5 3.5L17 8"/></symbol>
+<symbol id="i-un" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M10 9c0-3 4-3 4 0 0 2-2 2-2 4M12 16.5v1"/></symbol>
+<symbol id="i-pl" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z"/></symbol>
+<symbol id="i-rm" viewBox="0 0 24 24"><path d="M3 21V5l5-2h8l5 2v16M2 21h20M9 21v-6h6v6"/></symbol>
+</defs></svg>
+<header><svg class="ic lg"><use href="#i-dx"/></svg><div><h1>THE ROOM</h1><p>Forensic mix reconstruction and producer education</p></div><p class="local"><svg class="ic"><use href="#i-rm"/></svg>AUDIO STAYS LOCAL.</p></header>
+<main>
+<section id="stage"><div id="drop"><label for="f"><svg class="ic lg"><use href="#i-pl"/></svg><b>Drop an audio file here</b><span>or choose WAV / MP3 / M4A. Nothing is uploaded.</span></label><input id="f" type="file" accept="audio/*"></div>
+<canvas id="cv" width="960" height="540" aria-label="Virtual mix room"></canvas>
+<audio id="au" controls></audio>
+<canvas id="map" width="960" height="70" aria-label="Song map"></canvas>
+<canvas id="cy" width="960" height="56" aria-label="Cypher track"></canvas>
+<p class="law">NO FAKE. NO GUESSING. NO DECORATIVE ANALYSIS. MEASURE FIRST. SPEAK SECOND. TEACH WHAT THE AUDIO CAN SUPPORT.</p></section>
+<aside>
+<div class="tabs"><button data-t="log" class="on"><svg class="ic"><use href="#i-tm"/></svg>Timeline</button><button data-t="idx"><svg class="ic"><use href="#i-tc"/></svg>Techniques</button><button id="repb" disabled><svg class="ic"><use href="#i-ev"/></svg>Report</button></div>
+<ol id="log"><li class="empty">No events yet. Events are logged while the track plays.</li></ol>
+<ul id="idx" hidden></ul>
+<article id="teach"><h2>Teach me this</h2><p class="empty">Select an event to see what happened, the likely technique, and how to recreate it.</p></article>
+</aside></main>
+<dialog id="rep"><pre id="rept"></pre><button id="repx">Close</button></dialog>
+<script src="app.js"></script></body></html>
